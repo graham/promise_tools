@@ -25,11 +25,9 @@ class PromiseSequencer {
         this.last_promise = new Promise(head)
 
         this.last_promise.then(() => {
-            console.log('done')
             this.last_promise = null
             this.step()
         }, (error) => {
-            console.log(error)
             this.last_promise = null
             this.step()
         })
