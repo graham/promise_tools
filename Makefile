@@ -1,5 +1,5 @@
 all:
-	babel src/*.es6 --out-dir build/
+	cd src/ ; babel *.es6 --out-dir ../build/
 
 dev:
-	babel src/*.es6 --out-dir build/ -w
+	cd src/ ; babel *.es6 --out-dir ../build/ -w
